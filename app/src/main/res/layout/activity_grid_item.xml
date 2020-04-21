@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridItemActivity"
+    android:background="@drawable/background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/griddata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:text="Avengers"
+        android:textColor="#14D61C"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageview"
+        android:src="@drawable/avengers"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/griddata"
+        android:layout_marginTop="27dp"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="40dp"
+        android:rating="0"
+        android:id="@+id/rating"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate It"
+        android:layout_below="@id/rating"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:textColor="#FBC02D"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/b1"/>
+
+
+</RelativeLayout>
